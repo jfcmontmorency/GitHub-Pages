@@ -1,11 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages</title>
-</head>
-<body>
-GitHub Pages    
-</body>
+    <title>Connexion Unity</title>
+    <link rel="stylesheet" crossorigin href="./assets/index-BJN94h4U.css">
+  </head>
+  <body class="min-h-screen bg-base-100">
+
+    <input type="checkbox" value="halloween" class="toggle theme-controller absolute top-4 right-4" />
+
+    <!-- Squelette : visuel à gauche + formulaire à droite -->
+    <div class="grid min-h-screen lg:grid-cols-2">
+
+      <!-- Colonne visuelle (cachée sur mobile) -->
+      <aside class="relative hidden lg:grid place-items-center overflow-hidden bg-black text-white">
+        <img src="./assets/bg-p-3-ZjsY.jpg" alt="" class="absolute inset-0 size-full object-cover opacity-50">
+        <div class="relative max-w-md p-12 animate__animated animate__fadeIn">
+          <svg class="w-1/2 mx-auto fill-black/60" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Unity</title><path d="m12.9288 4.2939 3.7997 2.1929c.1366.077.1415.2905 0 .3675l-4.515 2.6076a.4192.4192 0 0 1-.4246 0L7.274 6.8543c-.139-.0745-.1415-.293 0-.3675l3.7972-2.193V0L1.3758 5.5977V16.793l3.7177-2.1456v-4.3858c-.0025-.1565.1813-.2682.318-.1838l4.5148 2.6076a.4252.4252 0 0 1 .2136.3676v5.2127c.0025.1565-.1813.2682-.3179.1838l-3.7996-2.1929-3.7178 2.1457L12 24l9.6954-5.5977-3.7178-2.1457-3.7996 2.1929c-.1341.082-.3229-.0248-.3179-.1838V13.053c0-.1565.087-.2956.2136-.3676l4.5149-2.6076c.134-.082.3228.0224.3179.1838v4.3858l3.7177 2.1456V5.5977L12.9288 0Z"/></svg>
+        </div>
+      </aside>
+
+      <!-- Colonne formulaire -->
+      <main class="flex flex-col overflow-hidden">
+
+        <!-- Formulaire centré -->
+        <div class="flex-1 grid place-items-center px-6 py-8">
+          <div class="w-full max-w-sm animate__animated animate__fadeInUp">
+
+            <h1 class="text-3xl font-bold">Connexion</h1>
+            <p class="mt-2 text-base-content/70">
+              Pas encore de compte ?
+              <a href="#" class="link link-primary font-semibold">Créer un compte</a>
+            </p>
+
+            <form class="mt-8 grid gap-4">
+
+              <!-- Courriel -->
+              <fieldset class="fieldset">
+                <label class="floating-label">
+                  <input type="email" placeholder="Adresse courriel" class="input input-md w-full" required />
+                  <span>Adresse courriel</span>
+                </label>
+              </fieldset>
+
+              <fieldset class="fieldset">
+                <label class="floating-label">
+                  <input type="password" placeholder="Mot de passe" class="input input-md w-full" required />
+                  <span>Mot de passe</span>
+                </label>
+                <a href="#" class="link link-hover text-right text-sm">Mot de passe oublié ?</a>
+              </fieldset>
+
+              <button type="submit" class="btn btn-primary w-full">
+                Se connecter <span class="icon-arrow-right"></span>
+              </button>
+            </form>
+
+            <div class="divider text-sm text-base-content/60">ou</div>
+
+            <div class="grid gap-3">
+              <button class="btn btn-outline w-full"><span class="icon-globe"></span> Continuer avec Google</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="flex flex-wrap justify-center gap-4 p-6 text-xs text-base-content/60">
+          <span>© 2026 Unity</span>
+          <a href="#" class="link link-hover">Confidentialité</a>
+          <a href="#" class="link link-hover">Conditions d'utilisation</a>
+        </footer>
+
+      </main>
+    </div>
+
+  </body>
 </html>
